@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial;
+  background: #eef2f7;
+}
+
+/* LAYOUT */
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 230px;
+  background: #111827;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar p {
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.sidebar p:hover {
+  background: #374151;
+}
+
+.sidebar button {
+  margin-top: 20px;
+  width: 100%;
+  background: #ef4444;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* TOP BAR */
+.topbar {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  gap: 20px;
+}
+
+.stats .card {
+  flex: 1;
+  text-align: center;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* FORM */
+.form-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+input, select {
+  width: 90%;
+  margin: 8px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* BUTTON */
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #3b82f6;
+  color: white;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+/* STATUS */
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+.status.Pending {
+  background: #fde68a;
+}
+
+.status.Completed {
+  background: #22c55e;
+  color: white;
+}
+
+/* BUTTON GROUP */
+.btns {
+  margin-top: 10px;
+}
+
+.btns button:first-child {
+  background: #10b981;
+}
+
+.btns button:last-child {
+  background: #ef4444;
+}
+/* FULL PAGE CENTER */
+.auth-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+}
+
+/* BOX */
+.auth-box {
+  background: white;
+  padding: 30px;
+  width: 320px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* TITLE */
+.auth-box h2 {
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+/* INPUT */
+.auth-box input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* BUTTON */
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #3b82f6;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.auth-box button:hover {
+  background: #2563eb;
+}
+
+/* TOGGLE */
+.toggle {
+  margin-top: 15px;
+  color: #3b82f6;
+  cursor: pointer;
+}
